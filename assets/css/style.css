@@ -338,14 +338,14 @@ h6 {
 }
 
 #hero .social-links a {
-  font-size: 16px;
+  font-size: 15px;
   display: inline-block;
   color: #ffffff;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
   border-radius: 50%;
-  padding: 8px;
+  padding: 7px;
   background: linear-gradient(-45deg, #a8f2f5, #085750f2);
 }
 
