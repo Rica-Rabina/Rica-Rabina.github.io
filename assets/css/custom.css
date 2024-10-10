@@ -531,103 +531,57 @@
   background: rgba(24, 27, 27, 0.288);
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
+/* contact section styling */
+.contact .right form .fields {
+  display: flex;
 }
-
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
+.contact .right form .fields,
+.contact .right form .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
 }
-
-.contact .php-email-form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #10a38b;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
+.contact .right form .name {
+  margin-right: 10px;
 }
-
-.contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
+.contact .right form .email {
+  margin-left: 10px;
 }
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+.contact .right form .textarea {
+  height: 160px;
+  width: 100%;
 }
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
-  color: #1d0707;
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+.contact .right form .textarea textarea {
+  padding-top: 10px;
 }
-
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: rgb(216, 208, 208);
-  opacity: 1;
+.contact .right form .button {
+  height: 47px;
+  width: 220px;
 }
-
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgb(255, 255, 255);
-  opacity: 1;
+.contact .right form .button button {
+  height: 100%;
+  width: 100%;
+  border: 2px solid rgb(12, 150, 155);
+  background: rgb(6, 133, 133);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: linear-gradient(-45deg, #add7abf2  #1d7e6e,);
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 8px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: linear-gradient(-45deg, #1d7e6e, #add7abf2);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+.contact .right form .button button:hover {
+  color: #159978;
+  background: none;
 }
